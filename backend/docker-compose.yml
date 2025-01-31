@@ -1,26 +1,80 @@
-version: '3.8'
 services:
-  user-service:
-    build: ./user-service
+  user_management_service:
+    build: ./user_management_service
     ports:
-      - "8081:8080"
-  sequence-upload-service:
-    build: ./sequence-upload-service
+      - '8081:8080'
+    environment:
+      - SPRING_PROFILES_ACTIVE=docker
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://postgres:5432/mutationmatrix
+      - SPRING_DATASOURCE_USERNAME=admin
+      - SPRING_DATASOURCE_PASSWORD=admin
+    depends_on:
+      - postgres
+
+  sequence_upload_service:
+    build: ./sequence_upload_service
     ports:
-      - "8082:8080"
-  analysis-service:
-    build: ./analysis-service
+      - '8082:8080'
+    environment:
+      - SPRING_PROFILES_ACTIVE=docker
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://postgres:5432/mutationmatrix
+      - SPRING_DATASOURCE_USERNAME=admin
+      - SPRING_DATASOURCE_PASSWORD=admin
+    depends_on:
+      - postgres
+
+  analysis_service:
+    build: ./analysis_service
     ports:
-      - "8083:8080"
-  api-gateway:
-    build: ./api-gateway
+      - '8083:8080'
+    environment:
+      - SPRING_PROFILES_ACTIVE=docker
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://postgres:5432/mutationmatrix
+      - SPRING_DATASOURCE_USERNAME=admin
+      - SPRING_DATASOURCE_PASSWORD=admin
+    depends_on:
+      - postgres
+
+  variant_calling_service:
+    build: ./variant_calling_service
     ports:
-      - "8080:8080"
+      - '8084:8080'
+
+  biomarker_prediction_service:
+    build: ./biomarker_prediction_service
+    ports:
+      - '8085:8080'
+
+  reporting_service:
+    build: ./reporting_service
+    ports:
+      - '8086:8080'
+
+  api_gateway:
+    build: ./api_gateway
+    ports:
+      - '8080:8080'
+    depends_on:
+      - user_management_service
+      - sequence_upload_service
+      - analysis_service
+      - variant_calling_service
+      - biomarker_prediction_service
+      - reporting_service
+
   postgres:
     image: postgres:13
     environment:
-      POSTGRES_DB: genoinsight
-      POSTGRES_PASSWORD: password
+      POSTGRES_DB: mutationmatrix # Corrected to match the service DB name
+      POSTGRES_USER: admin # Added to create the user
+      POSTGRES_PASSWORD: admin
+    volumes:
+      - postgres-data:/var/lib/postgresql/data # Proper indentation under postgres service
+
   redis:
     image: redis:6
+    ports:
+      - '6379:6379'
 
+volumes:
+  postgres-data: # Correct top-level volumes declaration
