@@ -29,7 +29,7 @@ public class UserServiceImpl {
         user.setEmail(userDTO.getEmail());
 
         User savedUser = userRepository.save(user);
-        return converToDTO(savedUser);
+        return convertToDTO(savedUser);
     }
 
     @Override
