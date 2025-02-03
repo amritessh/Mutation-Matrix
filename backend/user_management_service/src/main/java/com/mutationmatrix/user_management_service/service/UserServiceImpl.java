@@ -1,12 +1,12 @@
 package com.mutationmatrix.user_management_service.service;
 
-import org.apache.catalina.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import com.mutationmatrix.user_management_service.dto.UserRegistrationDTO;
 import com.mutationmatrix.user_management_service.dto.UserResponseDTO;
+import com.mutationmatrix.user_management_service.model.User;
 import com.mutationmatrix.user_management_service.repository.UserRepository;
 
 @Service
@@ -40,7 +40,7 @@ public class UserServiceImpl {
 
     private UserResponseDTO convertToDTO(User user) {
         UserResponseDTO dto = new UserResponseDTO();
-        dto.setId(user.getID());
+        dto.setId(user.getId());
         dto.setUsername(user.getUsername());
         dto.setEmail(user.getEmail());
         dto.setRoles(user.getRoles());
