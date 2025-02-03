@@ -10,7 +10,7 @@ import com.mutationmatrix.user_management_service.model.User;
 import com.mutationmatrix.user_management_service.repository.UserRepository;
 
 @Service
-public class UserServiceImpl {
+public class UserServiceImpl implements UserService {
 
     private final UserRepository userRepository;
     private final PasswordEncoder passwordEncoder;
