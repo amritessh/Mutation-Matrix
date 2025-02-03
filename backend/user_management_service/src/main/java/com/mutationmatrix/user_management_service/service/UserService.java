@@ -6,5 +6,5 @@ import com.mutationmatrix.user_management_service.dto.UserResponseDTO;
 public interface UserService {
     UserResponseDTO registerUser(UserRegistrationDTO userDTO);
 
-    UserResponseDTO getUserByID(Long id);
+    UserResponseDTO getUserById(Long id);
 }
