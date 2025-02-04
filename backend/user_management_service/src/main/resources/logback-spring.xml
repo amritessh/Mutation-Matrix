@@ -6,9 +6,9 @@
   </appender>
   
   <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
-    <file>logs/genoinsight.log</file>
+    <file>logs/mutationmatrix.log</file>
     <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
-      <fileNamePattern>logs/genoinsight-%d{yyyy-MM-dd}.log</fileNamePattern>
+      <fileNamePattern>logs/mutationmatrix-%d{yyyy-MM-dd}.log</fileNamePattern>
       <maxHistory>30</maxHistory>
     </rollingPolicy>
     <encoder>

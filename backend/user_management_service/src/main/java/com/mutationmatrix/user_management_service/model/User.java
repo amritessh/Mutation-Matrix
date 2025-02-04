@@ -2,10 +2,13 @@ package com.mutationmatrix.user_management_service.model;
 
 import java.util.Set;
 
+// import org.springframework.data.redis.core.RedisHash;
+
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;;
 
+// @RedisHash
 @Getter
 @Setter
 @Entity
