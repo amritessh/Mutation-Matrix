@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "com.genoinsight.variantcalling.grpc";
+
+package variantcalling;
+
+service VariantCallingService {
+  rpc CallVariants (SequenceRequest) returns (VariantResponse);
+}
+
+message SequenceRequest {
+  string sequence_data = 1;
+}
+
+message Variant {
+  int32 position = 1;
+  string reference = 2;
+  string alternate = 3;
+}
+
+message VariantResponse {
+  repeated Variant variants = 1;
+}

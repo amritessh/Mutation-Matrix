@@ -39,6 +39,12 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-batch</artifactId>
 		</dependency>
+		<dependency>
+					    <groupId>org.springframework.batch</groupId>
+    <artifactId>spring-batch-core</artifactId>
+    <version>5.2.1</version>
+		</dependency>
+
 		<properties>
     <kafka.version>3.5.1</kafka.version>
     <spring-kafka.version>3.3.2</spring-kafka.version>
