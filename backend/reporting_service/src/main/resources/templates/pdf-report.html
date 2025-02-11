@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genomic Analysis Report</title>
+    <p>Patient ID: <span th:text="${patientId}"></span></p>
+    
+    <h2>Variants</h2>
+    <ul>
+        <li th:each="variant : ${variants}" th:text="${variant}"></li>
+    </ul>
+    
+    <h2>Biomarkers</h2>
+    <ul>
+        <li th:each="biomarker : ${biomarkers}" th:text="${biomarker}"></li>
+    </ul>
+</body>
+</html>
