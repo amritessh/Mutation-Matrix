@@ -25056,3 +25056,277 @@ Caused by: java.lang.NullPointerException: Cannot invoke "org.springframework.cl
 2025-02-14 15:50:01.856 [DiscoveryClient-CacheRefreshExecutor-%d] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: false
 2025-02-14 15:50:01.856 [DiscoveryClient-CacheRefreshExecutor-%d] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
 2025-02-14 15:50:01.906 [DiscoveryClient-CacheRefreshExecutor-%d] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2025-02-14 15:54:31.447 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-02-14 15:59:31.479 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-02-14 16:04:31.487 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-02-14 16:09:31.501 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-02-14 16:14:31.514 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-02-14 16:17:18.261 [SpringApplicationShutdownHook] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application SEQUENCE_UPLOAD_SERVICE with eureka with status DOWN
+2025-02-14 16:17:18.263 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1739567838263, current=DOWN, previous=UP]
+2025-02-14 16:17:18.264 [DiscoveryClient-InstanceInfoReplicator-%d] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_SEQUENCE_UPLOAD_SERVICE/10.110.0.104:sequence_upload_service:8082: registering service...
+2025-02-14 16:17:18.324 [DiscoveryClient-InstanceInfoReplicator-%d] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_SEQUENCE_UPLOAD_SERVICE/10.110.0.104:sequence_upload_service:8082 - registration status: 204
+2025-02-14 16:17:18.340 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-02-14 16:17:18.354 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-02-14 16:17:18.496 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-02-14 16:17:18.532 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-02-14 16:17:18.541 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-02-14 16:17:18.543 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
+2025-02-14 16:17:21.550 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient - Unregistering ...
+2025-02-14 16:17:21.567 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_SEQUENCE_UPLOAD_SERVICE/10.110.0.104:sequence_upload_service:8082 - deregister  status: 200
+2025-02-14 16:17:21.568 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient - Completed shut down of DiscoveryClient
+2025-02-14 16:17:45.005 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
+2025-02-14 16:17:45.028 [main] INFO  c.m.s.SequenceUploadServiceApplication - Starting SequenceUploadServiceApplication using Java 23.0.2 with PID 58037 (/Users/amriteshanand/Mutation Matrix/backend/sequence_upload_service/target/classes started by amriteshanand in /Users/amriteshanand/Mutation Matrix/backend/sequence_upload_service)
+2025-02-14 16:17:45.028 [main] DEBUG c.m.s.SequenceUploadServiceApplication - Running with Spring Boot v3.4.2, Spring v6.2.2
+2025-02-14 16:17:45.028 [main] INFO  c.m.s.SequenceUploadServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-02-14 16:17:45.461 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-02-14 16:17:45.461 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-14 16:17:45.525 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 59 ms. Found 1 JPA repository interface.
+2025-02-14 16:17:45.533 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-02-14 16:17:45.534 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-02-14 16:17:45.541 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.mutationmatrix.sequence_upload_service.repository.SequenceMetaDataRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-02-14 16:17:45.541 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 2 ms. Found 0 Redis repository interfaces.
+2025-02-14 16:17:45.648 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=41473465-4f01-363f-a2ca-7d5fdbad51fe
+2025-02-14 16:17:45.906 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
+2025-02-14 16:17:45.912 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2025-02-14 16:17:45.913 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-02-14 16:17:45.913 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-14 16:17:45.944 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-02-14 16:17:45.945 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 896 ms
+2025-02-14 16:17:46.089 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-14 16:17:46.120 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.5.Final
+2025-02-14 16:17:46.134 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-02-14 16:17:46.236 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-14 16:17:46.248 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-02-14 16:17:46.343 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@2a191f83
+2025-02-14 16:17:46.345 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-02-14 16:17:46.372 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-02-14 16:17:46.380 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-02-14 16:17:46.701 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-14 16:17:46.747 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-14 16:17:46.940 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-14 16:17:47.455 [main] INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2025-02-14 16:17:47.487 [main] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-02-14 16:17:47.492 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2025-02-14 16:17:47.530 [main] INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2025-02-14 16:17:47.541 [main] INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2025-02-14 16:17:47.542 [main] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-02-14 16:17:47.546 [main] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2025-02-14 16:17:47.546 [main] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2025-02-14 16:17:47.546 [main] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2025-02-14 16:17:47.546 [main] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2025-02-14 16:17:47.546 [main] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2025-02-14 16:17:47.546 [main] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+2025-02-14 16:17:47.546 [main] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2025-02-14 16:17:47.727 [main] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2025-02-14 16:17:47.727 [main] INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2025-02-14 16:17:47.728 [main] INFO  c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-02-14 16:17:47.729 [main] INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1739567867728 with initial instances count: 0
+2025-02-14 16:17:47.732 [main] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application SEQUENCE_UPLOAD_SERVICE with eureka with status UP
+2025-02-14 16:17:47.732 [main] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1739567867732, current=UP, previous=STARTING]
+2025-02-14 16:17:47.733 [DiscoveryClient-InstanceInfoReplicator-%d] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_SEQUENCE_UPLOAD_SERVICE/10.110.0.104:sequence_upload_service:8082: registering service...
+2025-02-14 16:17:47.733 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2025-02-14 16:17:47.741 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8082 (http) with context path '/'
+2025-02-14 16:17:47.741 [main] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8082
+2025-02-14 16:17:47.757 [DiscoveryClient-InstanceInfoReplicator-%d] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_SEQUENCE_UPLOAD_SERVICE/10.110.0.104:sequence_upload_service:8082 - registration status: 204
+2025-02-14 16:17:47.758 [main] INFO  c.m.s.SequenceUploadServiceApplication - Started SequenceUploadServiceApplication in 2.954 seconds (process running for 3.204)
+2025-02-14 16:18:08.953 [http-nio-8082-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-14 16:18:08.953 [http-nio-8082-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-02-14 16:18:08.960 [http-nio-8082-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 5 ms
+2025-02-14 16:18:17.733 [DiscoveryClient-CacheRefreshExecutor-%d] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2025-02-14 16:18:17.734 [DiscoveryClient-CacheRefreshExecutor-%d] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2025-02-14 16:18:17.735 [DiscoveryClient-CacheRefreshExecutor-%d] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2025-02-14 16:18:17.735 [DiscoveryClient-CacheRefreshExecutor-%d] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2025-02-14 16:18:17.735 [DiscoveryClient-CacheRefreshExecutor-%d] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2025-02-14 16:18:17.735 [DiscoveryClient-CacheRefreshExecutor-%d] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: false
+2025-02-14 16:18:17.735 [DiscoveryClient-CacheRefreshExecutor-%d] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2025-02-14 16:18:17.785 [DiscoveryClient-CacheRefreshExecutor-%d] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2025-02-14 16:21:01.891 [SpringApplicationShutdownHook] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application SEQUENCE_UPLOAD_SERVICE with eureka with status DOWN
+2025-02-14 16:21:01.892 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1739568061892, current=DOWN, previous=UP]
+2025-02-14 16:21:01.893 [DiscoveryClient-InstanceInfoReplicator-%d] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_SEQUENCE_UPLOAD_SERVICE/10.110.0.104:sequence_upload_service:8082: registering service...
+2025-02-14 16:21:01.928 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-02-14 16:21:01.938 [DiscoveryClient-InstanceInfoReplicator-%d] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_SEQUENCE_UPLOAD_SERVICE/10.110.0.104:sequence_upload_service:8082 - registration status: 204
+2025-02-14 16:21:01.940 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-02-14 16:21:01.985 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-02-14 16:21:01.999 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-02-14 16:21:02.002 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-02-14 16:21:02.003 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
+2025-02-14 16:21:05.008 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient - Unregistering ...
+2025-02-14 16:21:05.026 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_SEQUENCE_UPLOAD_SERVICE/10.110.0.104:sequence_upload_service:8082 - deregister  status: 200
+2025-02-14 16:21:05.026 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient - Completed shut down of DiscoveryClient
+2025-02-14 16:21:15.834 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
+2025-02-14 16:21:15.853 [main] INFO  c.m.s.SequenceUploadServiceApplication - Starting SequenceUploadServiceApplication using Java 23.0.2 with PID 59256 (/Users/amriteshanand/Mutation Matrix/backend/sequence_upload_service/target/classes started by amriteshanand in /Users/amriteshanand/Mutation Matrix/backend/sequence_upload_service)
+2025-02-14 16:21:15.853 [main] DEBUG c.m.s.SequenceUploadServiceApplication - Running with Spring Boot v3.4.2, Spring v6.2.2
+2025-02-14 16:21:15.854 [main] INFO  c.m.s.SequenceUploadServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-02-14 16:21:16.027 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to process import candidates for configuration class [com.mutationmatrix.sequence_upload_service.SequenceUploadServiceApplication]: Failed to bind properties under 'springdoc' to org.springdoc.core.properties.SpringDocConfigProperties
+2025-02-14 16:21:16.031 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-02-14 16:21:16.041 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to bind properties under 'springdoc' to org.springdoc.core.properties.SpringDocConfigProperties:
+
+    Reason: org.springframework.core.convert.ConverterNotFoundException: No converter found capable of converting from type [java.lang.String] to type [org.springdoc.core.properties.SpringDocConfigProperties]
+
+Action:
+
+Update your application's configuration
+
+2025-02-14 16:22:25.736 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
+2025-02-14 16:22:25.756 [main] INFO  c.m.s.SequenceUploadServiceApplication - Starting SequenceUploadServiceApplication using Java 23.0.2 with PID 59695 (/Users/amriteshanand/Mutation Matrix/backend/sequence_upload_service/target/classes started by amriteshanand in /Users/amriteshanand/Mutation Matrix/backend/sequence_upload_service)
+2025-02-14 16:22:25.756 [main] DEBUG c.m.s.SequenceUploadServiceApplication - Running with Spring Boot v3.4.2, Spring v6.2.2
+2025-02-14 16:22:25.756 [main] INFO  c.m.s.SequenceUploadServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-02-14 16:22:25.899 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to process import candidates for configuration class [com.mutationmatrix.sequence_upload_service.SequenceUploadServiceApplication]: Failed to bind properties under 'springdoc' to org.springdoc.core.properties.SpringDocConfigProperties
+2025-02-14 16:22:25.902 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-02-14 16:22:25.909 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to bind properties under 'springdoc' to org.springdoc.core.properties.SpringDocConfigProperties:
+
+    Reason: org.springframework.core.convert.ConverterNotFoundException: No converter found capable of converting from type [java.lang.String] to type [org.springdoc.core.properties.SpringDocConfigProperties]
+
+Action:
+
+Update your application's configuration
+
+2025-02-14 16:26:52.367 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
+2025-02-14 16:26:52.388 [main] INFO  c.m.s.SequenceUploadServiceApplication - Starting SequenceUploadServiceApplication using Java 23.0.2 with PID 61162 (/Users/amriteshanand/Mutation Matrix/backend/sequence_upload_service/target/classes started by amriteshanand in /Users/amriteshanand/Mutation Matrix/backend/sequence_upload_service)
+2025-02-14 16:26:52.388 [main] DEBUG c.m.s.SequenceUploadServiceApplication - Running with Spring Boot v3.4.2, Spring v6.2.2
+2025-02-14 16:26:52.388 [main] INFO  c.m.s.SequenceUploadServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-02-14 16:26:52.564 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to process import candidates for configuration class [com.mutationmatrix.sequence_upload_service.SequenceUploadServiceApplication]: Failed to bind properties under 'springdoc' to org.springdoc.core.properties.SpringDocConfigProperties
+2025-02-14 16:26:52.568 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-02-14 16:26:52.577 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to bind properties under 'springdoc' to org.springdoc.core.properties.SpringDocConfigProperties:
+
+    Reason: org.springframework.core.convert.ConverterNotFoundException: No converter found capable of converting from type [java.lang.String] to type [org.springdoc.core.properties.SpringDocConfigProperties]
+
+Action:
+
+Update your application's configuration
+
+2025-02-14 19:25:34.290 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
+2025-02-14 19:25:34.311 [main] INFO  c.m.s.SequenceUploadServiceApplication - Starting SequenceUploadServiceApplication using Java 23.0.2 with PID 7460 (/Users/amriteshanand/Mutation Matrix/backend/sequence_upload_service/target/classes started by amriteshanand in /Users/amriteshanand/Mutation Matrix/backend/sequence_upload_service)
+2025-02-14 19:25:34.311 [main] DEBUG c.m.s.SequenceUploadServiceApplication - Running with Spring Boot v3.4.2, Spring v6.2.2
+2025-02-14 19:25:34.312 [main] INFO  c.m.s.SequenceUploadServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-02-14 19:25:34.480 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to process import candidates for configuration class [com.mutationmatrix.sequence_upload_service.SequenceUploadServiceApplication]: Failed to bind properties under 'springdoc' to org.springdoc.core.properties.SpringDocConfigProperties
+2025-02-14 19:25:34.484 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-02-14 19:25:34.500 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to bind properties under 'springdoc' to org.springdoc.core.properties.SpringDocConfigProperties:
+
+    Reason: org.springframework.core.convert.ConverterNotFoundException: No converter found capable of converting from type [java.lang.String] to type [org.springdoc.core.properties.SpringDocConfigProperties]
+
+Action:
+
+Update your application's configuration
+
+2025-02-14 19:28:09.661 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
+2025-02-14 19:28:09.681 [main] INFO  c.m.s.SequenceUploadServiceApplication - Starting SequenceUploadServiceApplication using Java 23.0.2 with PID 8386 (/Users/amriteshanand/Mutation Matrix/backend/sequence_upload_service/target/classes started by amriteshanand in /Users/amriteshanand/Mutation Matrix/backend/sequence_upload_service)
+2025-02-14 19:28:09.681 [main] DEBUG c.m.s.SequenceUploadServiceApplication - Running with Spring Boot v3.4.2, Spring v6.2.2
+2025-02-14 19:28:09.682 [main] INFO  c.m.s.SequenceUploadServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-02-14 19:28:10.124 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-02-14 19:28:10.125 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-14 19:28:10.188 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 59 ms. Found 1 JPA repository interface.
+2025-02-14 19:28:10.198 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-02-14 19:28:10.198 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-02-14 19:28:10.205 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.mutationmatrix.sequence_upload_service.repository.SequenceMetaDataRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-02-14 19:28:10.206 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 3 ms. Found 0 Redis repository interfaces.
+2025-02-14 19:28:10.314 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=4c577e4b-4155-3f7e-b7a8-7be3108c798d
+2025-02-14 19:28:10.564 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
+2025-02-14 19:28:10.570 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2025-02-14 19:28:10.571 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-02-14 19:28:10.571 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-14 19:28:10.601 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-02-14 19:28:10.602 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 902 ms
+2025-02-14 19:28:10.751 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-14 19:28:10.776 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.5.Final
+2025-02-14 19:28:10.791 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-02-14 19:28:10.906 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-14 19:28:10.919 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-02-14 19:28:11.015 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@23ffc910
+2025-02-14 19:28:11.016 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-02-14 19:28:11.040 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-02-14 19:28:11.048 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-02-14 19:28:11.407 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-14 19:28:11.452 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-14 19:28:11.654 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-14 19:28:12.169 [main] INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2025-02-14 19:28:12.208 [main] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-02-14 19:28:12.214 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2025-02-14 19:28:12.255 [main] INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2025-02-14 19:28:12.268 [main] INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2025-02-14 19:28:12.270 [main] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-02-14 19:28:12.273 [main] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2025-02-14 19:28:12.274 [main] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2025-02-14 19:28:12.274 [main] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2025-02-14 19:28:12.274 [main] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2025-02-14 19:28:12.274 [main] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2025-02-14 19:28:12.274 [main] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+2025-02-14 19:28:12.274 [main] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2025-02-14 19:28:12.631 [main] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2025-02-14 19:28:12.632 [main] INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2025-02-14 19:28:12.633 [main] INFO  c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-02-14 19:28:12.634 [main] INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1739579292633 with initial instances count: 0
+2025-02-14 19:28:12.637 [main] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application SEQUENCE_UPLOAD_SERVICE with eureka with status UP
+2025-02-14 19:28:12.637 [main] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1739579292637, current=UP, previous=STARTING]
+2025-02-14 19:28:12.638 [DiscoveryClient-InstanceInfoReplicator-%d] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_SEQUENCE_UPLOAD_SERVICE/10.110.0.104:sequence_upload_service:8082: registering service...
+2025-02-14 19:28:12.638 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2025-02-14 19:28:12.646 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8082 (http) with context path '/'
+2025-02-14 19:28:12.647 [main] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8082
+2025-02-14 19:28:12.660 [main] INFO  c.m.s.SequenceUploadServiceApplication - Started SequenceUploadServiceApplication in 3.213 seconds (process running for 3.478)
+2025-02-14 19:28:12.684 [DiscoveryClient-InstanceInfoReplicator-%d] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_SEQUENCE_UPLOAD_SERVICE/10.110.0.104:sequence_upload_service:8082 - registration status: 204
+2025-02-14 19:28:23.191 [http-nio-8082-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-14 19:28:23.192 [http-nio-8082-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-02-14 19:28:23.197 [http-nio-8082-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+2025-02-14 19:28:23.950 [http-nio-8082-exec-10] INFO  o.s.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 77 ms
+2025-02-14 19:28:42.643 [DiscoveryClient-CacheRefreshExecutor-%d] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2025-02-14 19:28:42.647 [DiscoveryClient-CacheRefreshExecutor-%d] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2025-02-14 19:28:42.647 [DiscoveryClient-CacheRefreshExecutor-%d] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2025-02-14 19:28:42.647 [DiscoveryClient-CacheRefreshExecutor-%d] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2025-02-14 19:28:42.647 [DiscoveryClient-CacheRefreshExecutor-%d] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2025-02-14 19:28:42.647 [DiscoveryClient-CacheRefreshExecutor-%d] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: false
+2025-02-14 19:28:42.647 [DiscoveryClient-CacheRefreshExecutor-%d] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2025-02-14 19:28:42.735 [DiscoveryClient-CacheRefreshExecutor-%d] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
